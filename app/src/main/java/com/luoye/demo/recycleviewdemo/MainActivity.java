@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         StaggeredGridLayoutManager manager = new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL);
                 recyclerView.setLayoutManager(manager);
         inidatas();
+        recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(new RcycleAdapter(datas, this));
     }
 
